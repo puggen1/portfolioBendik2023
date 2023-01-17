@@ -2,10 +2,7 @@ body{
     background-color: #14223C;
     margin: 0px;
 }
-.content{
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-}
+
 /*header*/
 header{
     display: flex;
@@ -78,11 +75,13 @@ header i{
 h1,h2,h3{
     color: white;
     font-family: 'Oswald', sans-serif;
-
+    font-weight: 400;
 }
 p, li, a{
     color:#f1f1f1 ;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
 }
 footer li, header li{
     list-style: none;
@@ -101,15 +100,48 @@ footer li, header li{
     padding: 7px 5px;
     border: none;
 }
+
+/* content boxes and inside */
+.content{
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 83%;
+    min-height: 80vh;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content:last-of-type{
+    margin-bottom: 20px;
+}
+.content h2, .content p{
+    text-align: center;
+}
+.content .button{
+    margin: auto 0 20px 0;
+}
+.changingContent{
+    width:60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10%;
+}
+/*to top*/
 .toTop{
+    display: block;
     color: black;
     text-decoration: none;
     background-color: white;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     box-sizing: border-box;
     border-radius: 50%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    line-height: 50px;
 }
 /* footer */
 footer{
@@ -127,4 +159,14 @@ footer > .contact{
 footer > .visit{
     grid-column: 4/5;
 }
+footer ul{
+    padding-left: 0;
+}
+footer li{
+    margin: 6px 0 6px 0;
+}
+footer img{
+    height: 35px;
+    }
+
 
