@@ -1,0 +1,129 @@
+body{
+    background-color: #14223C;
+    margin: 0px;
+}
+.content{
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 10px;
+    height: 7vh;
+    border-bottom: solid 1px #666380;
+}
+header p{
+    margin: 0px;
+    font-size: 1.5rem;
+}
+header i{
+    color: white;
+}
+#toggler{
+    visibility: hidden;
+
+}
+/*navigation*/
+#navigation{
+    display: none;
+}
+/*hero*/
+#hero{
+    margin: 0px;
+    background-image: url(../img/michael-baccin-XopauR-Nagk-unsplash.jpg);
+    height: 93vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.blurredBackground{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 100px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 100%;
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    color: rgba(0, 0, 0, 0.15);
+}
+.blurredBackground h1{
+    grid-column: 2/3;
+    font-size: 2.2rem;
+    text-align: center;
+}
+#heroMe{
+    grid-column: 3/4;
+}
+
+.rounded{
+    border-radius: 50%;
+    width: 65%;
+}
+#scrollDown{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+#scrollDown i{
+    color: white;
+}
+/*text styling*/
+
+h1,h2,h3{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+}
+p, li, a{
+    color:#f1f1f1 ;
+    font-family: 'Roboto', sans-serif;
+}
+footer li, header li{
+    list-style: none;
+}
+/*buttons / link*/
+.button{
+    background-color: #21178F;
+    border-radius: 5px;
+    padding: 7px 13px;
+    text-decoration: none;
+}
+#backNav{
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #cdc8ff;
+    border-radius: 10px;
+    padding: 7px 5px;
+    border: none;
+}
+.toTop{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+/* footer */
+footer{
+    border-top: solid 1px #666380;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+footer > .navigation{
+    grid-column: 2/3;
+}
+footer > .contact{
+    grid-column: 3/4;
+}
+footer > .visit{
+    grid-column: 4/5;
+}
+
