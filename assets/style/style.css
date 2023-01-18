@@ -1,11 +1,23 @@
-body{
-    background-color: #14223C;
-    margin: 0px;
+:root{
+    --box-background: rgba(0,0,0,0.15);
+    --main-color: #14223C;
+    --button-color: #21178F;
 }
-
+body{
+    background-color:var(--main-color);
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+main{
+    display: grid;
+    
+}
 /*header*/
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.1fr 4fr 0.1fr;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
@@ -17,16 +29,17 @@ header #logo{
     text-decoration: none;
     margin: 0px;
     font-size: 1.5rem;
+    text-align: center;
 }
 header i{
     color: white;
 }
 #toggler{
     visibility: hidden;
-
+    width: 0px;
 }
 header label{
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color:var(--box-background);
     border-radius: 10px;
     padding: 5px 10px;
 }
@@ -57,12 +70,11 @@ header label i{
     height: 100%;
     backdrop-filter: blur(12.5px);
     -webkit-backdrop-filter: blur(12.5px);
-    color: rgba(0, 0, 0, 0.15);
+    color: var(--box-background);
 }
 .blurredBackground h1{
     grid-column: 2/3;
     font-size: 2.2rem;
-    text-align: center;
 }
 #heroMe{
     grid-column: 3/4;
@@ -86,7 +98,10 @@ h1,h2,h3{
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-p, li, a{
+h1{
+    text-align: center;
+}
+p, li, a, footer h3{
     color:#f1f1f1 ;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -97,13 +112,13 @@ footer li, header li{
 }
 /*buttons / link*/
 .button{
-    background-color: #21178F;
+    background-color:var(--button-color);
     border-radius: 5px;
     padding: 7px 13px;
     text-decoration: none;
 }
 #backNav{
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color:var(--box-background);
     color: #cdc8ff;
     border-radius: 10px;
     padding: 7px 5px;
@@ -115,7 +130,7 @@ footer li, header li{
     scroll-margin-top: 90px;
 }
 .content{
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color:var(--box-background);
     border-radius: 10px;
     width: 83%;
     min-height: 80vh;
@@ -147,29 +162,37 @@ footer li, header li{
     color: black;
     text-decoration: none;
     background-color: white;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     box-sizing: border-box;
     border-radius: 50%;
-    margin: 0 auto 20px auto;
+    margin:  10px auto 10px auto;
+    position: relative;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
 }
 /* footer */
 footer{
+   
+    width: 100%;
     border-top: solid 1px #666380;
     height: 15vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+
 }
+
 footer > .navigation{
     grid-column: 2/3;
+    margin-right: auto;
 }
 footer > .contact{
     grid-column: 3/4;
+    margin: 0 auto;
 }
 footer > .visit{
     grid-column: 4/5;
+    margin-left: auto;
 }
 footer ul{
     padding-left: 0;
@@ -181,4 +204,76 @@ footer img{
     height: 35px;
     }
 
+
+/*all project page*/
+#allProjectHeader{
+    text-align: center;
+}
+#allProject{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    column-gap: 15%;
+}
+#allProject p{
+    display: block;
+    width: 42.5%;
+    box-sizing: border-box;
+    background-color:var(--box-background);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/*about me*/
+
+#aboutMe{
+
+}
+#aboutMe section{
+    margin: 20px auto;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    grid-template-areas:
+    "h2 image"
+    "about image"
+    "about image";
+    grid-template-rows: 0.5fr 2fr 2fr ;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    background-color: var(--box-background);
+    
+}
+#aboutMe section h2{
+    grid-area: h2;
+    text-align: center;
+}
+#aboutMe section .aboutContent{
+    grid-area: about;
+    width: 75%;
+}
+#aboutMe section img{
+    grid-area: image;
+    height: 400px;
+}
+
+/*skills*/
+#skills h2{
+    text-align: center;
+}
+#skills section div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--box-background);
+    column-gap: 10%;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    min-height: 50vh;
+}
+#skills div article{
+    width: 40%;
+    text-align: center;
+}
 
