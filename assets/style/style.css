@@ -27,6 +27,7 @@ header{
     padding: 0px 10px;
     height: 7vh;
     border-bottom: solid 1px #666380;
+    justify-items: center;
 }
 header #logo{
     text-decoration: none;
