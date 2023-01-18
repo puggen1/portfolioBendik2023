@@ -25,6 +25,15 @@ header i{
     visibility: hidden;
 
 }
+header label{
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+header label i{
+    font-size: 2rem;
+    color: #CDC8FF;
+}
 /*navigation*/
 #navigation{
     display: none;
@@ -102,6 +111,9 @@ footer li, header li{
 }
 
 /* content boxes and inside */
+#projectTop{
+    scroll-margin-top: 90px;
+}
 .content{
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 10px;
