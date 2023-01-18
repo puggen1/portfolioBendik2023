@@ -36,7 +36,7 @@ header i{
 }
 #toggler{
     visibility: hidden;
-    width: 0px;
+    width: 100%;
 }
 header label{
     background-color:var(--box-background);
