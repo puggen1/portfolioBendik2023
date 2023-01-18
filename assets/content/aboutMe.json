@@ -1,0 +1,13 @@
+{
+    "about":[
+        {"title":"Basic info",
+        "image":"",
+        "paragraphs":["something", "something"]},
+        {"title":"Front-end Developer",
+        "image":"",
+        "paragraphs":["something", "something"]},
+        {"title":"Hobbys",
+        "image":"",
+        "paragraphs":["something", "something"]}
+    ]
+}
