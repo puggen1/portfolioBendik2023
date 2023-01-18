@@ -3,6 +3,9 @@
     --main-color: #14223C;
     --button-color: #21178F;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color:var(--main-color);
     margin: 0px;
@@ -74,7 +77,6 @@ header label i{
 }
 .blurredBackground h1{
     grid-column: 2/3;
-    font-size: 2.2rem;
 }
 #heroMe{
     grid-column: 3/4;
@@ -100,6 +102,17 @@ h1,h2,h3{
 }
 h1{
     text-align: center;
+    font-size: 2.2rem;
+
+}
+h2{
+    font-size: 2rem;  
+}
+h3{
+    font-size: 1.7rem
+}
+.subHeader{
+    font-size: 1.3rem;
 }
 p, li, a, footer h3{
     color:#f1f1f1 ;
@@ -107,6 +120,7 @@ p, li, a, footer h3{
     font-weight: 400;
 
 }
+
 footer li, header li{
     list-style: none;
 }
@@ -151,10 +165,36 @@ footer li, header li{
 .changingContent{
     width:60%;
     justify-content: center;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
     column-gap: 10%;
+    margin: auto;
+}
+.changingContent article{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+.changingContent h3, .changingContent .subHeader{
+    text-align: center;
+}
+.changingContent p{
+    text-align: start;
+    margin: 0 auto;
+    width: 90%;
+}
+.changingContent img{
+    max-width: 100%;
+    width: 200px;
+    height:200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.changingContent .projectLogo{
+    background-color: white;
 }
 /*to top*/
 .toTop{

@@ -6,7 +6,7 @@
         [{"name":"GitHub","link":"..."},
         {"name":"Website", "link":"link"}],
         "type":"school",
-        "paragraphs":["something", "something"],
+        "paragraphs":["something", "something"],"ingress":"a blog that uses wordpress as a headless CMS.",
         "criterias":["e","e"],
         "learned":["e","e"]},
         {"title":"Bidder",
@@ -15,7 +15,7 @@
         [{"name":"GitHub","link":"..."},
         {"name":"Website", "link":"link"}],
         "type":"school",
-        "paragraphs":["something", "something"],
+        "paragraphs":["something", "something"],"ingress":"An auction house website, Connected to a api for functionality.",
         "criterias":["e","e"],
         "learned":["e","e"]},
 
