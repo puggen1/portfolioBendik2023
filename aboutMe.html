@@ -5,37 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/17aae2f01b.js" crossorigin="anonymous"></script>
+
+
     <title>Bendik Kvam | Portfolio</title>
 </head>
 <body>
-    <header>
-        <label for="navigation"></label>
-        <nav id="navigation">
-            <button>back icon</button>
+    <header id="top">
+        <label for="navigation"> <i class="fas fa-bars"></i></label>        <nav id="navigation">
+            <button id="backNav">back icon</button>
             <p>Show me....</p>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li> <a href="./aboutMe.html">About me</a></li>
                 <li><a href="./skills.html">My Skills</a></li>
-                <li> <a href="./contact.html">Contact me</a></li>
             </ul>
         </nav>
-        <p id="logo">Bendik Kvam</p>
-        <i>toggleMode?</i>
+        <a href="./index.html" id="logo">Bendik Kvam</a>
+        <i id="toggler">toggleMode?</i>
     </header>
-    <main>
+    <main id="aboutMe">
         <h1>About me</h1>
-        <section id="basic">
+        <section class="" id="basic">
+           
             <!--json content here-->
         </section>
         <section id="frontEnd">
+           
             <!--json content here-->
         </section>
         <section id="hobby">
+           
             <!--json content here-->
         </section>
-        <a href="#navigation" class="toTop">Top</a>
+        <a href="#top" class="toTop">Top</a>
 
     </main>
     <footer>
@@ -54,8 +61,8 @@
         <section class="visit">
             <h3>Visit</h3>
             <ul>
-                <li><a href="https://www.github.com/puggen1"></a><img src="./assets/img/github.jpg"> GitHub</li>
-                <li><a href="https://www.linkedin.com/in/bendik-kvam/"></a><img src="./assets/img/linkedin.jpg"> LinkedIn</li>
+                <li><a href="https://www.github.com/puggen1"><img src="./assets/img/github-mark-white.png"> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/bendik-kvam/"><img src="./assets/img/LI-In-Bug.png">My LinkedIn profile</a></li>
             </ul>
         </section>
     </footer>
