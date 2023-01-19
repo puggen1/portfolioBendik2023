@@ -11,3 +11,7 @@ footer tweaking
 sidenav
 
 display all json content
+
+meta desc
+alt
+improve images
