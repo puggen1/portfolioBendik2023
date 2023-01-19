@@ -318,3 +318,73 @@ footer img{
     text-align: center;
 }
 
+/*single project page*/
+
+#singleProject{
+    width: 50%;
+    margin: 10px auto 0px auto;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 66% 33%;
+    grid-template-areas: "image image"
+    "mainText criterias"
+    "mainText links"
+    "mainText learned";
+}
+#singleProject div, #singleProject ul{
+    background-color: var(--box-background);
+    border-radius: 10px;
+}
+#bgImage{
+    background-image: url("../img/DSC00235.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    grid-area: image;
+}
+.blur{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+
+}
+.screenshot{
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 80%;
+}
+#text{
+    grid-area: mainText;
+    padding: 10px 10% 0px 10%;
+}
+#text h1{
+    margin-top: 10px;
+}
+.criterias{
+    grid-area: criterias;
+}
+.links{
+    grid-area: links;
+    list-style: none;
+    padding-left: 5px;
+    padding-bottom: 10px;
+
+}
+.links img{
+    max-width: 30px;
+    border-radius: 50%;
+}
+#learned{
+    grid-area: learned;
+}
+
+/*remove padding from ul*/
+#learned, .criterias{
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+ul h2{
+margin: 2px 0px 7px 0px;    
+}
