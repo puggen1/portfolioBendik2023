@@ -428,13 +428,20 @@ main#aboutMe section img{
     border-radius: 10px;
     margin: 0 auto;
     height: 80%;
+    max-width: 100%;
 }
 #text{
     grid-area: mainText;
-    padding: 10px 10% 0px 10%;
+    padding: 0px 10% 0px 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 #text h1{
-    margin-top: 10px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+#text p:first-of-type{
+    margin-top: 0px;
 }
 .criterias{
     grid-area: criterias;
@@ -442,7 +449,7 @@ main#aboutMe section img{
 .links{
     grid-area: links;
     list-style: none;
-    padding-left: 5px;
+    padding-left: 25px;
     padding-bottom: 10px;
 
 }
