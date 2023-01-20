@@ -219,7 +219,7 @@ footer{
     border-top: solid 1px #666380;
     height: 15vh;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+    grid-template-columns: 8.5% 27.6% 27.6% 27.6% 8.5%;
 
 }
 
@@ -417,6 +417,10 @@ margin: 2px 0px 7px 0px;
     #allProject{
         width: 60%;
     }
+    #skills section div{
+        width: 60%;
+    }
+
 }
 /*1130 px width*/
 /*most for hero front page*/
@@ -477,7 +481,17 @@ margin: 2px 0px 7px 0px;
         
     }
     footer{
-        grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 5% 45% 45% 5%;
+        grid-template-rows: auto auto;
+    }
+    footer > .contact{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left: 0;
+    }
+    footer > .visit{
+        grid-column: 3/4;
+        grid-row: 1/2;
     }
 }
 
@@ -509,18 +523,7 @@ margin: 2px 0px 7px 0px;
     #allProject div{
         width: 100%;
     }
-    footer{
-        grid-template-columns: 5% 1fr 1fr 5%;
-        grid-template-rows: auto auto;
-    }
-    footer > .contact{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    footer > .visit{
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
+    
     .navigation{
         grid-column: 2/4;
         grid-row: 2/3;
@@ -531,5 +534,25 @@ margin: 2px 0px 7px 0px;
     }
     .navigation ul li{
         width: 50%;
+    }
+    footer{
+        grid-template-columns: 90%;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        }
+    footer > .contact{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    footer > .visit{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 0;
+    }
+    footer > .navigation{
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
 }
