@@ -286,7 +286,7 @@ footer img{
     margin: 0 auto 0 auto;
     column-gap: 15%;
 }
-#allProject div{
+#allProject a{
     display:grid;
     grid-template-areas: "image text";
     grid-template-columns: 33% 66%;
@@ -298,11 +298,16 @@ footer img{
     background-color:var(--box-background);
     padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
 }
-#allProject div img{
+#allProject a img{
 grid-area: image;
  margin: 0 auto;
- width: 90%;
+ width: 75px;
+ height: 75px;
+ background-color: white;
+ border-radius: 50%;
+
 }
 #allProject .text{
     grid-area: text;
@@ -310,11 +315,11 @@ grid-area: image;
     flex-direction: column;
     justify-content: space-between;
 }
-#allProject div h2{
+#allProject a h2{
     margin: 0;
     
 }
-#allProject div p{
+#allProject a p{
     margin: 0;
     grid-area: p;
 }
@@ -352,10 +357,14 @@ grid-area: image;
 }
 
 /*skills*/
+.skills h3, .skills p{
+    text-align: center;
+    margin: 5px;
+}
 #skills h2{
     text-align: center;
 }
-#skills section div{
+.json{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -365,10 +374,17 @@ grid-area: image;
     margin: 0 auto;
     border-radius: 10px;
     min-height: 50vh;
+    padding: 30px 0px;
 }
-#skills div article{
+.skills{
     width: 40%;
     text-align: center;
+    margin: 50px 0;
+}
+.skills img{
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
 }
 
 /*single project page*/
