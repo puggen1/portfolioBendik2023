@@ -196,6 +196,35 @@ footer li, header li{
 }
 .changingContent .projectLogo{
     background-color: white;
+    margin: auto;
+}
+/*project front section*/
+.projectFront{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.projectFront p{
+    width: 65%;
+    text-align: center;
+}
+/*skills front section */
+.skills{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.skills p{
+    text-align: center;
+}
+/*about front section*/
+#aboutMe{
+    column-gap: 10%;
+    display: flex;
+}
+#aboutMe .aboutFront{
+    display: flex;
+    flex-direction: column;
 }
 /*to top*/
 .toTop{
