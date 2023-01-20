@@ -453,8 +453,13 @@ main#aboutMe section img{
     padding-bottom: 10px;
 
 }
+.links li{
+    
+}
 .links img{
     max-width: 30px;
+    max-height: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 #learned{
