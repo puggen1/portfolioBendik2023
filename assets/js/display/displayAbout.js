@@ -9,4 +9,24 @@ function showFrontAbout(data) {
   }
   return aboutHtml;
 }
-export { showFrontAbout };
+
+function createAbout(topic) {
+  let p = "";
+  for (let para of topic.paragraphs) {
+    p += `<p>${para}</p>`;
+  }
+  console.log(p);
+  return `
+  <img class="aboutImg" src="${topic.image}">
+  <h2>${topic.title}</h2>
+  <div class="aboutContent">
+  ${p}
+  </div>`;
+}
+function showAbout(data) {
+  let basic = createAbout(data.about[0]);
+  let front = createAbout(data.about[1]);
+  let hobby = createAbout(data.about[2]);
+  return [basic, front, hobby];
+}
+export { showFrontAbout, showAbout };

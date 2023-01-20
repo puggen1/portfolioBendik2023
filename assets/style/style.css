@@ -221,6 +221,7 @@ footer li, header li{
 #aboutMe{
     column-gap: 10%;
     display: flex;
+    
 }
 #aboutMe .aboutFront{
     display: flex;
@@ -325,10 +326,10 @@ grid-area: image;
 }
 /*about me*/
 
-#aboutMe{
-
+main#aboutMe{
+    flex-direction: column;
 }
-#aboutMe section{
+main#aboutMe section{
     margin: 20px auto;
     border-radius: 10px;
     justify-items: center;
@@ -340,20 +341,24 @@ grid-area: image;
     grid-template-rows: 0.5fr 2fr 2fr ;
     grid-template-columns: 50% 50%;
     width: 50%;
+    height: 400px;
     background-color: var(--box-background);
     
 }
-#aboutMe section h2{
+main#aboutMe section h2{
     grid-area: h2;
     text-align: center;
 }
-#aboutMe section .aboutContent{
+main#aboutMe section .aboutContent{
     grid-area: about;
     width: 75%;
 }
-#aboutMe section img{
+main#aboutMe section img{
     grid-area: image;
-    height: 400px;
+    border-radius: 5px;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto    ;
 }
 
 /*skills*/
