@@ -8,7 +8,7 @@
 
     ],
     "wantedSkills":[
-        {"name":"React.JS", "image":"./assets/img/skills/reactLogo.json"},
+        {"name":"React.JS", "image":"./assets/img/skills/reactLogo.png"},
         {"name":"Tailwind.css", "image":"./assets/img/skills/tailwindLogo.png"},
         {"name":"Discord.js", "image":"./assets/img/skills/discordLogo.png"}
     ]

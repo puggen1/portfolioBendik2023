@@ -19,16 +19,6 @@
         "paragraphs":["This was an semester project for my second year in school. I was tasked with creating an Auction website. The website got all the data from an API, and I had to choose how i wanted to display the content. I also needed to send fetch calls to create users, login, bid on item and sell item.", "The technical part of this project went well, the api was well documented, and I have started understanding apis very well. The design im quite happy with, I had to change some of my design because of some api listings where a bit longer than i expected. Since alot of other people got this assignment, i could not set limits for number of characters, and therefore needed to make the desing more responsive to all content.", "From this project, I have become very confident with working with API's."],"ingress":"An auction house website, connected to a api for functionality.",
         "criterias":["User can create listing", "user can register", "user can search for listings", "user can bid on others listing", "user can display others bid"],
         "learned":["To create design that fits all outputs from api","Send info to an api so it gets saved", "use bootstrap as CSS framework"],
-        "image":"./assets/img/projects/Bidderfrontpage.png"},
-
-        {"title":"?",
-        "logo":"./assets/img/projects/"
-        ,"links":
-        [{"name":"GitHub","link":"..."},
-        {"name":"Website", "link":"link"}],
-        "type":"school",
-        "paragraphs":["something", "something"],
-        "criterias":["e","e"],
-        "learned":["e","e"]}
+        "image":"./assets/img/projects/Bidderfrontpage.png"}
     ]
 }
