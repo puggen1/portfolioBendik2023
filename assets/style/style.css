@@ -131,6 +131,12 @@ footer li, header li{
     border-radius: 5px;
     padding: 7px 13px;
     text-decoration: none;
+    border:solid 2px var(--button-color);
+
+}
+.button:hover{
+    background-color: transparent;
+    border:solid 2px var(--button-color);
 }
 #backNav{
     background-color:var(--box-background);
@@ -157,7 +163,7 @@ footer li, header li{
 .content:last-of-type{
     margin-bottom: 20px;
 }
-.content h2, .content p{
+.content h3, .content p{
     text-align: center;
 }
 .content .button{
@@ -171,6 +177,7 @@ footer li, header li{
     column-gap: 10%;
     margin: auto;
 }
+
 .changingContent article{
     width: 25%;
     margin: 0;
@@ -193,13 +200,16 @@ footer li, header li{
     height:200px;
     margin: 0 auto;
     border-radius: 50%;
+    object-fit: cover;
 }
 .changingContent .projectLogo{
     background-color: white;
     margin: auto;
+    object-fit:contain;
 }
 /*project front section*/
 .projectFront{
+    width: 45%;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -208,6 +218,11 @@ footer li, header li{
     width: 65%;
     text-align: center;
 }
+.projectFront h3, .skills h3{
+    margin-bottom: 5px;
+        margin-top: 5px;
+}
+
 /*skills front section */
 .skills{
     display: flex;
@@ -225,6 +240,7 @@ footer li, header li{
 }
 #aboutMe .aboutFront{
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 /*to top*/
@@ -341,13 +357,14 @@ main#aboutMe section{
     grid-template-rows: 0.5fr 2fr 2fr ;
     grid-template-columns: 50% 50%;
     width: 50%;
-    height: 400px;
+    min-height: 400px;
     background-color: var(--box-background);
     
 }
 main#aboutMe section h2{
     grid-area: h2;
     text-align: center;
+    margin-top: 5px;
 }
 main#aboutMe section .aboutContent{
     grid-area: about;
@@ -359,14 +376,15 @@ main#aboutMe section img{
     max-width: 90%;
     max-height: 90%;
     margin: auto    ;
+    
+    
 }
 
 /*skills*/
 .skills h3, .skills p{
     text-align: center;
-    margin: 5px;
 }
-#skills h2{
+#skills h3{
     text-align: center;
 }
 .json{
@@ -422,6 +440,7 @@ main#aboutMe section img{
     width: 100%;
     background: rgba(255, 255, 255, 0.1) !important;
     backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
 
 }
 .screenshot{
@@ -474,7 +493,27 @@ main#aboutMe section img{
 ul h2{
 margin: 2px 0px 7px 0px;    
 }
+@media screen and (max-width:1600px){
 
+    #allProject a{
+        width: 47.5%;
+    }
+    #allProject{
+        column-gap: 5%;
+        width: 60%;
+    }
+    #aboutMe{
+        flex-wrap: wrap;
+        row-gap: 50px;
+        justify-content: center;
+    }
+    #aboutMe .aboutFront{
+        width: 40%;
+    }
+    #aboutMe .aboutFront:last-of-type{
+        margin-bottom: 30px;
+    }
+}
 @media screen and (max-width: 1440px) {
     #allProject{
         width: 60%;
@@ -494,7 +533,19 @@ margin: 2px 0px 7px 0px;
     .blurredBackground h1{
     }
     #allProject{
-        width: 75%;
+        width: 83%;
+        column-gap: 1%;
+        
+    }
+    #allProject a{
+        width: 49.5%;
+        padding:10px 5px
+    }
+    #projects.changingContent{
+        width: 80%;
+    }
+    main#aboutMe section{
+        width: 83%;
     }
 }
 @media screen and (max-width: 845px) {
@@ -526,6 +577,16 @@ margin: 2px 0px 7px 0px;
         grid-column: 1/2;
         margin-bottom: 10px;
     }
+    .changingContent, .changingContent #aboutMe{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        margin-bottom: 20px;
+    }
+    .projectFront, .skills, #aboutMe .aboutFront{
+        
+        width: 100%;
+    } 
     #skills section div{
         width: 83%;
     }
@@ -534,13 +595,19 @@ margin: 2px 0px 7px 0px;
     }
     #singleProject{
         width: 83%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "image image "
+        "mainText mainText"
+        "criterias links"
+        "learned .";
     }
-    #allProject div{
+    #allProject a{
      width: 100%;
      height: 200px;
     }
-    #allProject img{
-        
+    #allProject a img{
+        height: 100px;
+        width: 100px;
     }
     footer{
         grid-template-columns: 5% 45% 45% 5%;
@@ -572,6 +639,12 @@ margin: 2px 0px 7px 0px;
     #projectTop .subHeader{
         display: none;
     }
+    #projectTop{
+        scroll-margin: 15px;
+    }
+    .projectFront h3, .skills h3{
+        
+    }
     .changingContent{
         width: 70%;
     }
@@ -582,9 +655,21 @@ margin: 2px 0px 7px 0px;
     #allProject{
         width: 90%;
     }
-    #allProject div{
+    #allProject a{
         width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "image"
+        "text";
+        margin-top:  10%;
+        padding: 30px 10px;
+        height: auto;
     }
+    #allProject a .text{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+        
     
     .navigation{
         grid-column: 2/4;
@@ -616,5 +701,42 @@ margin: 2px 0px 7px 0px;
     footer > .navigation{
         grid-column: 1/2;
         grid-row: 3/4;
+    }
+    #singleProject{
+        grid-template-columns: 100%;
+        grid-template-areas: "image"
+        "mainText"
+        "criterias"
+        "links"
+        "learned";
+    }
+    #bgImage{
+        max-width: 100%;
+        height: 250px;
+        background-position: center;
+    }
+    .blur{
+        height: 100%;
+        width: 100%;
+    }
+    .screenshot{
+        height: 200px;
+        width: 90%;
+    }
+    main#aboutMe section{
+        grid-template-columns: 100%;
+        grid-template-areas: "h2"
+        "image"
+        "about";
+        height: auto;
+        grid-template-rows: auto auto auto;
+    }
+    main#aboutMe section img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    main#aboutMe section h2{
+        margin-bottom: 5px;
     }
 }

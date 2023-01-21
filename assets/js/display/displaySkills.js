@@ -3,7 +3,7 @@ function showFrontSkills(data) {
   for (let i = 0; i < 3; i++) {
     skillsHtml += `<div class="skills" >
             <img class="SkillImg" src="${data[i].image}">
-            <h2>${data[i].name}</h2>
+            <h3>${data[i].name}</h3>
             <p> ${data[i].level}</p>
             </div>`;
   }

@@ -3,7 +3,7 @@ function showFrontProjects(data) {
   for (let project of data) {
     projectHtml += `<a class="projectFront" href="./singleProjectDisplay.html?title=${project.title}">
         <img class="projectLogo" src="${project.logo}">
-        <h2>${project.title}</h2>
+        <h3>${project.title}</h3>
         <p> ${project.ingress}</p>
         </a>`;
   }
