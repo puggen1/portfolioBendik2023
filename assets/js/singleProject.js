@@ -19,32 +19,47 @@ let crit = document.querySelector(".criterias");
 let github = document.querySelector("#gh");
 let website = document.querySelector("#website");
 let websiteImg = document.querySelector("#website img");
-let learned = document.querySelector("#learned");
+let githubImg = document.querySelector("#gh img");
+let learnedDiv = document.querySelector("#learned");
+// criterias and learned had to be specific, i dont know why yet
+let {
+  logo,
+  image,
+  projectTitle = title,
+  projectCriterias = filteredProjects[0].criterias,
+  paragraphs,
+  links,
+  ingress,
+  projectLearned = filteredProjects[0].learned,
+} = filteredProjects[0];
 document
   .querySelector('meta[name="description"]')
-  .setAttribute("content", filteredProjects[0].ingress);
-background.style.backgroundImage = `url(${filteredProjects[0].image})`;
-screenshot.src = filteredProjects[0].image;
-header.innerText = filteredProjects[0].title;
+  .setAttribute("content", ingress);
+background.style.backgroundImage = `url(${image})`;
+screenshot.src = image;
+screenshot.alt = projectTitle + "'s logo";
+header.innerText = projectTitle;
 let para = "";
-for (let p of filteredProjects[0].paragraphs) {
+for (let p of paragraphs) {
   para += `<p> ${p}</p>`;
 }
 allText.innerHTML += para;
-let criterias = "";
-for (let criteria of filteredProjects[0].criterias) {
-  criterias += `<li> ${criteria}</li>`;
+let allCriterias = "";
+for (let criteria of projectCriterias) {
+  allCriterias += `<li> ${criteria}</li>`;
 }
-crit.innerHTML += criterias;
+crit.innerHTML += allCriterias;
 
-github.href = filteredProjects[0].links[0].link;
-website.href = filteredProjects[0].links[1].link;
-websiteImg.src = filteredProjects[0].logo;
+github.href = links[0].link;
+githubImg.alt = "GitHubs Logo";
+website.href = links[1].link;
+websiteImg.src = logo;
+websiteImg.alt = "the websites logo Logo";
 websiteImg.style.backgroundColor = "white";
 let learnedItems = "";
-for (let learned of filteredProjects[0].learned) {
+for (let learned of projectLearned) {
   learnedItems += `
     <li>${learned}</li>
     `;
 }
-learned.innerHTML += learnedItems;
+learnedDiv.innerHTML += learnedItems;
