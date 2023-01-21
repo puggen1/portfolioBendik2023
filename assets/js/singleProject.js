@@ -20,7 +20,9 @@ let github = document.querySelector("#gh");
 let website = document.querySelector("#website");
 let websiteImg = document.querySelector("#website img");
 let learned = document.querySelector("#learned");
-console.log(filteredProjects);
+document
+  .querySelector('meta[name="description"]')
+  .setAttribute("content", filteredProjects[0].ingress);
 background.style.backgroundImage = `url(${filteredProjects[0].image})`;
 screenshot.src = filteredProjects[0].image;
 header.innerText = filteredProjects[0].title;
