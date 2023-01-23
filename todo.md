@@ -12,8 +12,8 @@ sidenav
 
 display all json content
 
-meta desc
-alt
 improve images
 
 laptop size 1024 must be wider do footer first
+
+list need to do title diffrently
