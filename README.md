@@ -15,15 +15,18 @@
 
 ## about the project
 
-This is my new portfolio website.
-I have used CSS, HTML, and JS,
-No framework
-Figma for design and prototype
-Netlify for hosting
+This is my new portfolio website. where you can find information about me, my projects or skills i know.
+For this project I have only used CSS, HTML, and JS. No frameworks
+
+For design I have used Figma, Here I also created an prototype
+
+for hosting of my website i have used Netlify.
 
 I have not initiated npm, since I did not see a need for packages.
 
 ## design
+
+---
 
 ### colors
 
@@ -51,6 +54,8 @@ Roboto is used for most of the main text.
 
 ## javascript
 
+---
+
 I have only used javascript for two things, navigation and displaying JSON content.
 
 ### navigation
@@ -66,9 +71,19 @@ On the single project page, I send a search param through, so it knows what proj
 
 ## assets
 
+---
+
 Most of the content comes from JSON, except for some images that is hardcoded, like in the footer.
 
+Images i have used comes from several sorces:
+
+- unsplash.com - the background image on front page, as well as about me images.
+- Picture of me - Taken by my friend Preben Standal
+- icons for the diffrent websites are from their brand assets or wikimedia.org
+
 ## links
+
+---
 
 [figma prototype](https://www.figma.com/proto/BpxNQeQktKxFrQ4Oolo2R6/new-portfolio?page-id=101%3A1988&node-id=101%3A2134&viewport=-4565%2C1736%2C0.23&scaling=min-zoom&starting-point-node-id=101%3A2134)
 
