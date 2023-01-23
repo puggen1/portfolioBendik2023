@@ -72,17 +72,19 @@ header label i{
 }
 #navContent{
     background-color: var(--main-color);
-    transition: 0.5s;
+    transition: width 0.4s linear;
     width: 0px;
     text-overflow:hidden ;
     white-space: nowrap;
     height: 100%;
 }
 .hidden{
-    visibility: hidden;
-    transition: 0.1s;
-
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    transition: opacity 0.1s linear;
 }
+
 #topOfNav{
     display: flex;
     align-items: center;
@@ -93,7 +95,12 @@ header label i{
 #topOfNav p{
     font-size: 1.5rem;
 }
-
+.showNav{
+    width: 300px !important;
+}
+.showNavParent{
+    width: 100% !important;
+}
 /*hero*/
 #hero{
     margin: 0px;
@@ -519,9 +526,7 @@ main#aboutMe section img{
     padding-bottom: 10px;
 
 }
-.links li{
-    
-}
+
 .links img{
     max-width: 30px;
     max-height: 30px;
@@ -577,8 +582,6 @@ margin: 2px 0px 7px 0px;
         grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
 
     }
-    .blurredBackground h1{
-    }
     #allProject{
         width: 83%;
         column-gap: 1%;
@@ -594,7 +597,6 @@ margin: 2px 0px 7px 0px;
     main#aboutMe section{
         width: 83%;
     }
-    #aboutMe
 }
 @media screen and (max-width: 845px) {
     .blurredBackground{
@@ -673,6 +675,12 @@ margin: 2px 0px 7px 0px;
 }
 
 @media screen and (max-width: 425px){
+    .showNav{
+        width: 100vw !important;
+    }
+    .showNavParent{
+        width: 0px!important;
+    }
     .blurredBackground{
         grid-template-columns:1fr;
         grid-template-rows: 46.5vh 34.65vh 11.55vh;
