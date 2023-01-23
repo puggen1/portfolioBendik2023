@@ -112,4 +112,4 @@ Images i have used comes from several sorces:
 
 [figma document](https://www.figma.com/file/BpxNQeQktKxFrQ4Oolo2R6/new-portfolio?node-id=101%3A1988&t=3JVIF0dzyuEU87Ix-1)
 
-[netlify](bendikkvam.netlify.app)
+[netlify](https://bendikkvam.netlify.app)
