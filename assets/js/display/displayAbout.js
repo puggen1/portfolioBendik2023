@@ -3,7 +3,7 @@ function showFrontAbout(data) {
   for (let about of data) {
     aboutHtml += `<div class="aboutFront" >
               <img class="aboutImg" src="${about.image}" alt="${about.alt}">
-              <h3>${about.title}</h3>
+              <h3 class="centerHeader">${about.title}</h3>
               <p> ${about.paragraphs[0]}</p>
               </div>`;
   }
@@ -18,7 +18,7 @@ function createAbout(topic) {
   console.log(p);
   return `
   <img class="aboutImg" src="${topic.image}" alt="${topic.alt}">
-  <h2>${topic.title}</h2>
+  <h2 class="centerHeader">${topic.title}</h2>
   <div class="aboutContent">
   ${p}
   </div>`;
