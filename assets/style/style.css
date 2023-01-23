@@ -3,14 +3,7 @@
     --main-color: #14223C;
     --button-color: #21178F;
 }
-@keyframes navIn {
-    from {
-      }
-    
-      to {
-        display: block;
-      }
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -61,8 +54,46 @@ header label i{
 }
 /*navigation*/
 #navigation{
-    display: none;
+    z-index: 1;
+    width: 0px;
+    background-color: rgba(0,0,0,0.25);
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
 }
+#navigation li{
+    margin: 20px 0;
+}
+#navigation ul a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#navContent{
+    background-color: var(--main-color);
+    transition: 0.5s;
+    width: 0px;
+    text-overflow:hidden ;
+    white-space: nowrap;
+    height: 100%;
+}
+.hidden{
+    visibility: hidden;
+    transition: 0.1s;
+
+}
+#topOfNav{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+   width: 300px;
+
+}
+#topOfNav p{
+    font-size: 1.5rem;
+}
+
 /*hero*/
 #hero{
     margin: 0px;
@@ -150,8 +181,16 @@ footer li, header li{
     background-color:var(--box-background);
     color: #cdc8ff;
     border-radius: 10px;
-    padding: 7px 5px;
+    padding: 5px 20px;
     border: none;
+    margin-left: 10px;
+    font-size: 1.5rem;
+
+
+}
+
+#backNav:hover, #top label:hover{
+    cursor:pointer;
 }
 
 /* content boxes and inside */
