@@ -108,8 +108,8 @@ Images i have used comes from several sorces:
 
 ---
 
-[figma prototype](https://www.figma.com/proto/BpxNQeQktKxFrQ4Oolo2R6/new-portfolio?page-id=101%3A1988&node-id=101%3A2134&viewport=-4565%2C1736%2C0.23&scaling=min-zoom&starting-point-node-id=101%3A2134)
+[figma prototype](https://www.figma.com/proto/BpxNQeQktKxFrQ4Oolo2R6/new-portfolio?node-id=101%3A2134&scaling=min-zoom&page-id=101%3A1988&starting-point-node-id=101%3A2134&show-proto-sidebar=1)
 
-[figma document](https://www.figma.com/file/BpxNQeQktKxFrQ4Oolo2R6/new-portfolio?node-id=101%3A1988&t=OLvzFbCi7Ijeb1bt-1)
+[figma document](https://www.figma.com/file/BpxNQeQktKxFrQ4Oolo2R6/new-portfolio?node-id=101%3A1988&t=3JVIF0dzyuEU87Ix-1)
 
 [netlify](bendikkvam.netlify.app)
