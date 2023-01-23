@@ -249,6 +249,13 @@ footer li, header li{
     border-radius: 50%;
     object-fit: cover;
 }
+.altLogo p{
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+}
 .changingContent .projectLogo{
     object-fit:contain;
     border-radius: 0% !important;
@@ -365,7 +372,7 @@ footer img{
     border-radius: 5px;
     text-decoration: none;
 }
-#allProject a img{
+#allProject a img, #allProject .altLogo{
  margin: 0 auto;
  width: 75px;
  height: 75px;
@@ -411,6 +418,7 @@ main#aboutMe section h2{
 }
 main#aboutMe section .aboutContent{
     grid-area: about;
+    margin: 0 auto;
     width: 75%;
 }
 main#aboutMe section img{
@@ -437,6 +445,9 @@ main#aboutMe section img{
     border-radius: 10px;
     min-height: 50vh;
     padding: 30px 0px;
+}
+.json:last-of-type{
+    margin-bottom: 10px;
 }
 .skills{
     width: 40%;
@@ -517,6 +528,7 @@ main#aboutMe section img{
     max-width: 30px;
     max-height: 30px;
     height: 30px;
+    width: 30px;
     border-radius: 50%;
 }
 #learned{
@@ -662,7 +674,27 @@ main#aboutMe section img{
         grid-row: 1/2;
     }
 }
-
+@media screen and (max-width: 500px){
+        /*project all page*/
+    #allProject{
+        width: 90%;
+    }
+    #allProject a{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "image"
+        "text";
+        margin-top:  10%;
+        padding: 30px 10px;
+        height: auto;
+    }
+    #allProject a .text{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+        
+}
 @media screen and (max-width: 425px){
     .showNav{
         width: 100vw !important;
@@ -693,29 +725,11 @@ main#aboutMe section img{
     .changingContent article{
      width: 100%;
     }
-    .changingContent .projectLogo{
+    .changingContent .projectLogo, .changingContent .altLogo{
         width: 150px;
         height: 150px;
     }
-    /*project all page*/
-    #allProject{
-        width: 90%;
-    }
-    #allProject a{
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-areas: "image"
-        "text";
-        margin-top:  10%;
-        padding: 30px 10px;
-        height: auto;
-    }
-    #allProject a .text{
-        width: 75%;
-        margin: 0 auto;
-        text-align: center;
-    }
-        
+  
     
     .navigation{
         grid-column: 2/4;

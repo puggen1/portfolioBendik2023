@@ -26,7 +26,6 @@ sideNav.addEventListener("click", (e) => {
 });
 
 function closeNavigation(e) {
-  console.log(e);
   //since the back button have content inside, i had to send a string trough so it does not take icon's atributes and dont run
   if (e === "back" || !(e.target.id !== "navigation")) {
     sideNav.classList.toggle("showNavParent");
