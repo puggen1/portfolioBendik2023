@@ -249,6 +249,13 @@ footer li, header li{
     border-radius: 50%;
     object-fit: cover;
 }
+.altLogo p{
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+}
 .changingContent .projectLogo{
     object-fit:contain;
     border-radius: 0% !important;
@@ -365,7 +372,7 @@ footer img{
     border-radius: 5px;
     text-decoration: none;
 }
-#allProject a img{
+#allProject a img, #allProject .altLogo{
  margin: 0 auto;
  width: 75px;
  height: 75px;
@@ -517,6 +524,7 @@ main#aboutMe section img{
     max-width: 30px;
     max-height: 30px;
     height: 30px;
+    width: 30px;
     border-radius: 50%;
 }
 #learned{
@@ -693,7 +701,7 @@ main#aboutMe section img{
     .changingContent article{
      width: 100%;
     }
-    .changingContent .projectLogo{
+    .changingContent .projectLogo, .changingContent .altLogo{
         width: 150px;
         height: 150px;
     }

@@ -1,3 +1,8 @@
+/**
+ * @description takes in known skills array, and creates html code to display on front page
+ * @param {Array} data Array with all the known skills
+ * @returns {String} html code for the front page skills section
+ */
 function showFrontSkills(data) {
   let skillsHtml = "";
   for (let i = 0; i < 3; i++) {
@@ -9,6 +14,11 @@ function showFrontSkills(data) {
   }
   return skillsHtml;
 }
+/**
+ * @description converts array of objects to html code
+ * @param {Array} data Array with all the known and wanted skills taht will be displayed on skills page
+ * @returns {Array} an array with html code
+ */
 function showAllSkills(data) {
   let knownSkills = ``;
   let wantedSkills = ``;

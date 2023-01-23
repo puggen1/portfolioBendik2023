@@ -24,6 +24,28 @@ for hosting of my website i have used Netlify.
 
 I have not initiated npm, since I did not see a need for packages.
 
+I was looking on a few other portfolio pages for inspiration, But i feel most featured portfolio pages are confusing. Sure they are well made and fancy, but i feel some should be a bit more simpler. I wanted my portfolio to focus on projects, and information about them, and be easy to navigate.
+In the future, i might create an more advanced portfolio page, but for now i will stick to this.
+
+### considering the assignment proccess
+
+Consider the target audience and their likely personas.
+
+    Potential workplaces and recruiters. This indicate that i would need to display what skills i know, not just projects.
+
+Research other portfolio websites for ideas.
+
+    Portfolios I was researching was most foccused on the design. I dont feel that strong on either design nor programming to shift my website towoards one instead of another...
+    My thought is to make it simple, and also get content "externaly" from JSON to use a bit of javascript
+
+Choose what you want to highlight for your portfolio. Is your portfolio programming-focused or design-focused?
+
+    As in the previous comment, I did not shift focus one way..
+
+Decide on the content architecture for the site. How many pages should it have and which projects should make up the portfolio?
+
+    The plan was to display enough content on the front page, and have extra content on other pages. the projects i want to showcase are the project i feel confident in showing.
+
 ## design
 
 ---
