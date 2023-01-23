@@ -9,7 +9,7 @@
         "paragraphs":["a project where the main goal where to create an blog, about whatever you wanted. I choose formula one, as im a very big fan of the sport. For the project, i had to use wordpress as an CMS(content managment system), but as headless cms. So the main purpose of wordpress was to create blog posts, and display them on my own design.", "This was done by using javascript fetch, and displaying all the posts, or all the posts correlating to the filters", "another feature the website needed was an image carousel, at this point in the school year, we had not learned about that, so I had to research and create an own version. The website creation went well, i planned alot before i started implementing the design and code. I also User tested the website with MAZE.CO for early feedback.", "I am happy with how the website functioned when it was done, but I learned that I need to practise more on my design."],"ingress":"a blog that uses wordpress as a headless CMS.",
         "criterias":["12 blog posts (could be sample text)","Image carousel","filters","Headless CMS"],
         "learned":["To access content from a CMS and displaying it","Creating an image carousel", "using feedback from user testing to improve design", "filter the content"],
-        "image":"./assets/img/projects/formulaFanBlog.png"},
+        "image":"./assets/img/projects/formulaFanBlog.jpg"},
             {"title":"Bidder",
         "logo":"https://puggen1.github.io/Semester-Project/assets/logo.svg"
         ,"links":
@@ -19,6 +19,6 @@
         "paragraphs":["This was an semester project for my second year in school. I was tasked with creating an Auction website. The website got all the data from an API, and I had to choose how i wanted to display the content. I also needed to send fetch calls to create users, login, bid on item and sell item.", "The technical part of this project went well, the api was well documented, and I have started understanding apis very well. The design im quite happy with, I had to change some of my design because of some api listings where a bit longer than i expected. Since alot of other people got this assignment, i could not set limits for number of characters, and therefore needed to make the desing more responsive to all content.", "From this project, I have become very confident with working with API's."],"ingress":"An auction house website, connected to a api for functionality.",
         "criterias":["User can create listing", "user can register", "user can search for listings", "user can bid on others listing", "user can display others bid"],
         "learned":["To create design that fits all outputs from api","Send info to an api so it gets saved", "use bootstrap as CSS framework"],
-        "image":"./assets/img/projects/Bidderfrontpage.png"}
+        "image":"./assets/img/projects/Bidderfrontpage.jpg"}
     ]
 }

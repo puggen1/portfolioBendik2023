@@ -15,12 +15,12 @@ let background = document.querySelector("#bgImage");
 let screenshot = document.querySelector(".screenshot");
 let header = document.querySelector("h1");
 let allText = document.querySelector("#text");
-let crit = document.querySelector(".criterias");
+let criteriasUl = document.querySelector(".criterias ul");
 let github = document.querySelector("#gh");
 let website = document.querySelector("#website");
 let websiteImg = document.querySelector("#website img");
 let githubImg = document.querySelector("#gh img");
-let learnedDiv = document.querySelector("#learned");
+let learnedUl = document.querySelector("#learned ul");
 // criterias and learned had to be specific, i dont know why yet
 let {
   logo,
@@ -48,7 +48,7 @@ let allCriterias = "";
 for (let criteria of projectCriterias) {
   allCriterias += `<li> ${criteria}</li>`;
 }
-crit.innerHTML += allCriterias;
+criteriasUl.innerHTML += allCriterias;
 
 github.href = links[0].link;
 githubImg.alt = "GitHubs Logo";
@@ -62,4 +62,4 @@ for (let learned of projectLearned) {
     <li>${learned}</li>
     `;
 }
-learnedDiv.innerHTML += learnedItems;
+learnedUl.innerHTML += learnedItems;
