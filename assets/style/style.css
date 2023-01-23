@@ -3,6 +3,7 @@
     --main-color: #14223C;
     --button-color: #21178F;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -53,7 +54,52 @@ header label i{
 }
 /*navigation*/
 #navigation{
-    display: none;
+    z-index: 1;
+    width: 0px;
+    background-color: rgba(0,0,0,0.25);
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+}
+#navigation li{
+    margin: 20px 0;
+}
+#navigation ul a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#navContent{
+    background-color: var(--main-color);
+    transition: width 0.4s ease-in-out;
+    width: 0px;
+    text-overflow:hidden ;
+    white-space: nowrap;
+    height: 100%;
+}
+.hidden{
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    transition: opacity 0.1s ease-in-out;
+}
+
+#topOfNav{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+   width: 300px;
+
+}
+#topOfNav p{
+    font-size: 1.5rem;
+}
+.showNav{
+    width: 300px !important;
+}
+.showNavParent{
+    width: 100% !important;
 }
 /*hero*/
 #hero{
@@ -144,8 +190,16 @@ footer li, header li{
     background-color:var(--box-background);
     color: #cdc8ff;
     border-radius: 10px;
-    padding: 7px 5px;
+    padding: 5px 20px;
     border: none;
+    margin-left: 10px;
+    font-size: 1.5rem;
+
+
+}
+
+#backNav:hover, #top label:hover{
+    cursor:pointer;
 }
 
 /* content boxes and inside */
@@ -475,9 +529,7 @@ main#aboutMe section img{
     padding-bottom: 10px;
 
 }
-.links li{
-    
-}
+
 .links img{
     max-width: 30px;
     max-height: 30px;
@@ -532,8 +584,6 @@ margin: 2px 0px 7px 0px;
     .blurredBackground{
         grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
 
-    }
-    .blurredBackground h1{
     }
     #allProject{
         width: 83%;
@@ -628,6 +678,12 @@ margin: 2px 0px 7px 0px;
 }
 
 @media screen and (max-width: 425px){
+    .showNav{
+        width: 100vw !important;
+    }
+    .showNavParent{
+        width: 0px!important;
+    }
     .blurredBackground{
         grid-template-columns:1fr;
         grid-template-rows: 46.5vh 34.65vh 11.55vh;

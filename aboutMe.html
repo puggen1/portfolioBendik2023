@@ -16,15 +16,19 @@
 </head>
 <body>
     <header id="top">
-        <label for="navigation"> <i class="fas fa-bars"></i></label>        <nav id="navigation">
-            <button id="backNav">back icon</button>
+        <label for="navigation"> <i class="fas fa-bars"></i></label> <nav id="navigation">
+            <section id="navContent">
+            <div id="topOfNav" class="hidden">
+            <button id="backNav"><i class="fas fa-arrow-left"></i></button>
             <p>Show me....</p>
-            <ul>
+            </div>
+            <ul class="hidden">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li> <a href="./aboutMe.html">About me</a></li>
                 <li><a href="./skills.html">My Skills</a></li>
             </ul>
+        </section>
         </nav>
         <a href="./index.html" id="logo">Bendik Kvam</a>
     </header>
@@ -67,5 +71,7 @@
         </section>
     </footer>
     <script type="module" src="./assets/js/aboutPage.js"></script>
+    <script src="assets/js/navigation/navigation.js"></script>
+
 </body>
 </html>
