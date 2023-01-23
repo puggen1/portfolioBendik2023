@@ -72,7 +72,7 @@ header label i{
 }
 #navContent{
     background-color: var(--main-color);
-    transition: width 0.4s linear;
+    transition: width 0.4s ease-in-out;
     width: 0px;
     text-overflow:hidden ;
     white-space: nowrap;
@@ -82,7 +82,7 @@ header label i{
     pointer-events: none;
     opacity: 0;
     width: 0px;
-    transition: opacity 0.1s linear;
+    transition: opacity 0.1s ease-in-out;
 }
 
 #topOfNav{
