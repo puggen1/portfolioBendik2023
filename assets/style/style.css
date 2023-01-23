@@ -418,6 +418,7 @@ main#aboutMe section h2{
 }
 main#aboutMe section .aboutContent{
     grid-area: about;
+    margin: 0 auto;
     width: 75%;
 }
 main#aboutMe section img{
@@ -444,6 +445,9 @@ main#aboutMe section img{
     border-radius: 10px;
     min-height: 50vh;
     padding: 30px 0px;
+}
+.json:last-of-type{
+    margin-bottom: 10px;
 }
 .skills{
     width: 40%;

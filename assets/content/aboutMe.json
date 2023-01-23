@@ -2,7 +2,7 @@
     "about":[
         {"title":"Basic info",
         "image":"./assets/img/about/towfiqu-barbhuiya-oZuBNC-6E2s-unsplash.jpg",
-        "paragraphs":["I am 23 years old from Norway. In my spare time i like to hang out with my friends, especially at quiz nights: where we meet up once a week.", "The last years i have been Studying, as well as working. Currently im studying Front-end Development at Noroff.","when im not at school or with friends, i like to play videogames or take pictures outside."],
+        "paragraphs":["I am 23 years old from Norway. In my spare time i like to hang out with my friends, especially at quiz nights where we meet up once a week.", "The last years i have been Studying, as well as working. Currently im studying Front-end Development at Noroff.","when im not at school or with friends, i like to play videogames or take pictures outside."],
         "alt":"an questionMark on a colorfull background"    
     },
         {"title":"Front-end Developer",
