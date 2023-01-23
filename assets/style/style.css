@@ -3,6 +3,14 @@
     --main-color: #14223C;
     --button-color: #21178F;
 }
+@keyframes navIn {
+    from {
+      }
+    
+      to {
+        display: block;
+      }
+}
 html{
     scroll-behavior: smooth;
 }
@@ -547,6 +555,7 @@ margin: 2px 0px 7px 0px;
     main#aboutMe section{
         width: 83%;
     }
+    #aboutMe
 }
 @media screen and (max-width: 845px) {
     .blurredBackground{
