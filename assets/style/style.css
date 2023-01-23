@@ -559,11 +559,13 @@ margin: 2px 0px 7px 0px;
     .changingContent, .changingContent #aboutMe{
         flex-direction: column;
         align-items: center;
-        row-gap: 50px;
         margin-bottom: 20px;
     }
     .projectFront, .skills, #aboutMe .aboutFront{
         width: 100%;
+    }
+    #projects.changingContent{
+        row-gap: 30px;
     } 
     #skills section div{
         width: 83%;
@@ -604,7 +606,6 @@ margin: 2px 0px 7px 0px;
 
 @media screen and (max-width: 425px){
     .blurredBackground{
-        grid-template-columns:1fr;
         grid-template-rows: 46.5vh 34.65vh 11.55vh;
     }
     .blurredBackground #heroMe{
