@@ -1,0 +1,15 @@
+{
+    "knownSkills":[
+        {"name":"html", "level":"Advanced", "image":"./assets/img/skills/htmlLogo.png"},
+        {"name":"css", "level":"Advanced","image":"./assets/img/skills/cssLogo.png"},
+        {"name":"Javascript", "level":"Medium - Advanced","image":"./assets/img/skills/jsLogo.png"},
+        {"name":"figma", "level":"medium - Advanced","image":"./assets/img/skills/figmaLogo.svg"},
+        {"name":"Bootstrap", "level":"medium - Advanced","image":"./assets/img/skills/bsLogo.png"}
+
+    ],
+    "wantedSkills":[
+        {"name":"React.JS", "image":"./assets/img/skills/reactLogo.png"},
+        {"name":"Tailwind.css", "image":"./assets/img/skills/tailwindLogo.png"},
+        {"name":"Discord.js", "image":"./assets/img/skills/discordLogo.png"}
+    ]
+}

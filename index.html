@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my(Bendik kvam)'s Portfolio website, here you can find links to some of my projects. You can also find information about me, what skills i know, or contact me">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/17aae2f01b.js" crossorigin="anonymous"></script>   
+
+    <title>Bendik Kvam | Portfolio</title>
+</head>
+<body>
+    <header id="top">
+        <label for="navigation"> <i class="fas fa-bars"></i></label>
+        <nav id="navigation">
+            <section id="navContent">
+            <div id="topOfNav" class="hidden">
+            <button aria-label="close the navbar" id="backNav"><i class="fas fa-arrow-left"></i></button>
+            <p>Show me....</p>
+            </div>
+            <ul class="hidden">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li> <a href="./aboutMe.html">About me</a></li>
+                <li><a href="./skills.html">My Skills</a></li>
+            </ul>
+        </section>
+        </nav>
+        <a href="./index.html" class="centerHeader" id="logo">Bendik Kvam</a>
+    </header>
+   
+    <main>
+        <section id="hero">
+            <div class="blurredBackground">
+            <h1 class="centerHeader">Bendik Kvam <br> A Front-end developer</h1>
+            <img src="./assets/img/DSC00235.jpg" id="heroMe" class="rounded" alt="a picture of me(Bendik) looking to the left of the camera">
+            <a href="#projectTop" id="scrollDown" aria-label="Button to scroll down to more content"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        </section>
+        <section class="content" id="projectTop">
+            <h2>Projects</h2>
+            <p class="subHeader centerHeader">A collection of school and hobby projects</p>
+            <div id="projects" class="changingContent">
+               
+            </div>
+            <a class="button" href="projects.html">Projects</a>
+        </section>
+        <sectcion class="content">
+            <h2>Skills I know</h2>
+            <div id="skills" class="changingContent">
+                
+            </div>
+            <a href="./skills.html" class="button">View All</a>
+        </sectcion>
+        <section class="content">
+            <h2>
+                About me
+            </h2>
+            <div  class="changingContent">
+                <div id="aboutMe">
+
+                </div>
+                  
+            </div>
+            <a href="./aboutMe.html" class="button">About me</a>
+        </section>
+       
+        <a href="#top" class="toTop centerHeader">Top</a>
+    </main>
+    <footer>
+        <section class="navigation">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h3>Contact</h3>
+            <a href="mailto:bendik.kvam.work@gmail.com">Email: bendik.kvam.work@gmail.com</a>
+        </section>
+        <section class="visit">
+            <h3>Visit</h3>
+            <ul>
+                <li><a href="https://www.github.com/puggen1"><img src="./assets/img/github-mark-white.png" alt="the GitHub logo"> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/bendik-kvam/"><img src="./assets/img/LI-In-Bug.png" alt="the LinkedIn logo">My LinkedIn profile</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script type="module" src="./assets/js/script.js"></script>
+    <script src="assets/js/navigation/navigation.js"></script>
+
+</body>
+</html>

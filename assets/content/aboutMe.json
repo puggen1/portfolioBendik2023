@@ -1,0 +1,19 @@
+{
+    "about":[
+        {"title":"Basic info",
+        "image":"./assets/img/about/towfiqu-barbhuiya-oZuBNC-6E2s-unsplash.jpg",
+        "paragraphs":["I am 23 years old from Norway. In my spare time i like to hang out with my friends, especially at quiz nights where we meet up once a week.", "The last years i have been Studying, as well as working. Currently im studying Front-end Development at Noroff.","when im not at school or with friends, i like to play videogames or take pictures outside."],
+        "alt":"an questionMark on a colorfull background"    
+    },
+        {"title":"Front-end Developer",
+        "image":"./assets/img/about/danial-igdery-FCHlYvR5gJI-unsplash.jpg",
+        "paragraphs":["I kind of have created websites since 2017 at school, but there was some years i did not do too much new.", "2 - 3 years ago, i started programming again, first python, but then back to html and css.", "Now i have forgotten alot of the python, but it got me back into coding and im gratefull for that.", "I decided to start studying at Noroff, and quickly learned alot of new relevant knowledge, as well as refreshing my past knowledge."],
+        "alt":"a person programming on a pc"
+    },
+        {"title":"Hobbys",
+        "image":"./assets/img/about/brandon-erlinger-ford-jL8QFwnuOcQ-unsplash.jpg",
+        "paragraphs":["My hobbys consists of Photography, learning new things, playing videogames and go for a walk.", "i especially like photography, since it make me calm down and “live the moment."],
+        "alt":"a image of a camera pointing directly at the screen"
+    }
+    ]
+}

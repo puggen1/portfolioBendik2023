@@ -1,0 +1,801 @@
+:root{
+    --box-background: rgba(0,0,0,0.15);
+    --main-color: #14223C;
+    --button-color: #21178F;
+    --icon-Color:#CDC8FF;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:var(--main-color);
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+main{
+    display: grid;
+    
+}
+/*header*/
+header{
+    display: grid;
+    grid-template-columns: 50px 4fr 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 10px;
+    height: 7vh;
+    border-bottom: solid 1px #666380;
+    justify-items: center;
+}
+header #logo{
+    text-decoration: none;
+    margin: 0px;
+    font-size: 1.5rem;
+}
+header i{
+    color: white;
+}
+header label{
+    background-color:var(--box-background);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+header label i{
+    font-size: 2rem;
+    color: var(--icon-Color);
+}
+/*navigation*/
+#navigation{
+    z-index: 1;
+    width: 0px;
+    background-color: rgba(0,0,0,0.25);
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+}
+#navigation li{
+    margin: 20px 0;
+}
+#navigation ul a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#navContent{
+    background-color: var(--main-color);
+    transition: width 0.4s ease-in-out;
+    width: 0px;
+    text-overflow:hidden ;
+    white-space: nowrap;
+    height: 100%;
+}
+.hidden{
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    transition: opacity 0.1s ease-in-out;
+}
+
+#topOfNav{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+   width: 300px;
+
+}
+#topOfNav p{
+    font-size: 1.5rem;
+}
+.showNav{
+    width: 300px !important;
+}
+.showNavParent{
+    width: 100% !important;
+}
+/*hero*/
+#hero{
+    margin: 0px;
+    background-image: url(../img/michael-baccin-XopauR-Nagk-unsplash.jpg);
+    height: 93vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.blurredBackground{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 100px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 100%;
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    color: var(--box-background);
+}
+.blurredBackground h1{
+    grid-column: 2/3;
+}
+#heroMe{
+    grid-column: 3/4;
+}
+
+.rounded{
+    border-radius: 50%;
+    width: 65%;
+}
+#scrollDown{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+#scrollDown i{
+    color: white;
+}
+/*text styling*/
+
+h1,h2,h3{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-size: 2.2rem;
+
+}
+h2{
+    font-size: 2rem;  
+}
+h3{
+    font-size: 1.7rem
+}
+.subHeader{
+    font-size: 1.3rem;
+}
+p, li, a, footer h3{
+    color:#f1f1f1 ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+footer li, header li{
+    list-style: none;
+}
+.centerHeader{
+    text-align: center;
+}
+/*buttons / link*/
+.button{
+    background-color:var(--button-color);
+    border-radius: 5px;
+    padding: 7px 13px;
+    text-decoration: none;
+    border:solid 2px var(--button-color);
+
+}
+.button:hover{
+    background-color: transparent;
+    border:solid 2px var(--button-color);
+}
+#backNav{
+    background-color:var(--box-background);
+    color: var(--icon-Color);
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: none;
+    margin-left: 10px;
+    font-size: 1.5rem;
+
+
+}
+
+#backNav:hover, #top label:hover{
+    cursor:pointer;
+}
+
+/* content boxes and inside */
+#projectTop{
+    scroll-margin-top: 90px;
+}
+.content{
+    background-color:var(--box-background);
+    border-radius: 10px;
+    width: 83%;
+    min-height: 80vh;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content:last-of-type{
+    margin-bottom: 20px;
+}
+
+.content .button{
+    margin: auto 0 20px 0;
+}
+.changingContent{
+    width:60%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    margin: auto;
+}
+
+.changingContent article{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+.changingContent p{
+    margin: 0 auto;
+    width: 90%;
+}
+.changingContent img{
+    max-width: 100%;
+    width: 200px;
+    height:200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.altLogo p{
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+}
+.changingContent .projectLogo{
+    object-fit:contain;
+    border-radius: 0% !important;
+}
+.imageBackground{
+    background-color: white;
+    margin: auto;
+    border-radius: 50%;
+    padding: 10%;
+    display: grid;
+    align-items: center;
+    grid-area: image;
+    
+}
+/*project front section*/
+.projectFront{
+    width: 45%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.projectFront p{
+    width: 65%;
+}
+.projectFront h3, .skills h3{
+    margin-bottom: 5px;
+        margin-top: 5px;
+}
+
+/*skills front section */
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+/*about front section*/
+#aboutMe{
+    column-gap: 10%;
+    display: flex;
+    
+}
+#aboutMe .aboutFront{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+/*to top*/
+.toTop{
+    display: block;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin:  auto auto 10px auto;
+    position: relative;
+    line-height: 40px;
+}
+/* footer */
+footer{
+   
+    width: 100%;
+    border-top: solid 1px #666380;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 8.5% 27.6% 27.6% 27.6% 8.5%;
+
+}
+
+footer > .navigation{
+    grid-column: 2/3;
+    margin-right: auto;
+}
+footer > .contact{
+    grid-column: 3/4;
+    margin: 0 auto;
+}
+footer > .visit{
+    grid-column: 4/5;
+    margin-left: auto;
+}
+footer ul{
+    padding-left: 0;
+}
+footer li{
+    margin: 6px 0 6px 0;
+}
+footer img{
+    height: 35px;
+    }
+
+
+/*all project page*/
+#allProject{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    column-gap: 15%;
+}
+#allProject a{
+    display:grid;
+    grid-template-areas: "image text";
+    grid-template-columns: 33% 66%;
+    grid-template-rows: auto;
+    align-items: center;
+    width: 42.5%;
+    height: 150px;
+    box-sizing: border-box;
+    background-color:var(--box-background);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#allProject a img, #allProject .altLogo{
+ margin: 0 auto;
+ width: 75px;
+ height: 75px;
+}
+#allProject .text{
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#allProject a h2{
+    margin: 0;
+    
+}
+#allProject a p{
+    margin: 0;
+    grid-area: p;
+}
+/*about me*/
+
+main#aboutMe{
+    flex-direction: column;
+}
+main#aboutMe section{
+    margin: 20px auto;
+    border-radius: 10px;
+    justify-items: center;
+    display: grid;
+    grid-template-areas:
+    "h2 image"
+    "about image"
+    "about image";
+    grid-template-rows: 0.5fr 2fr 2fr ;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    min-height: 400px;
+    background-color: var(--box-background);
+    
+}
+main#aboutMe section h2{
+    grid-area: h2;
+    margin-top: 5px;
+}
+main#aboutMe section .aboutContent{
+    grid-area: about;
+    margin: 0 auto;
+    width: 75%;
+}
+main#aboutMe section img{
+    grid-area: image;
+    border-radius: 5px;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto    ;
+    
+    
+}
+
+/*skills*/
+
+
+.json{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--box-background);
+    column-gap: 10%;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    min-height: 50vh;
+    padding: 30px 0px;
+}
+.json:last-of-type{
+    margin-bottom: 10px;
+}
+.skills{
+    width: 40%;
+    margin: 50px 0;
+}
+.skills img{
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+    border-radius: 0px  !important;
+}
+
+/*single project page*/
+
+#singleProject{
+    width: 50%;
+    margin: 10px auto 10px auto;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 1rem;
+    grid-template-columns: 66% 33%;
+    grid-template-areas: "image image"
+    "mainText criterias"
+    "mainText links"
+    "mainText learned";
+}
+#singleProject div{
+    background-color: var(--box-background);
+    border-radius: 10px;
+}
+#bgImage{
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    grid-area: image;
+}
+.blur{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+
+}
+.screenshot{
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 80%;
+    max-width: 100%;
+}
+#text{
+    grid-area: mainText;
+    padding: 0px 10% 0px 10%;
+  
+}
+#text h1{
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+#text p:first-of-type{
+    margin-top: 0px;
+}
+.criterias{
+    grid-area: criterias;
+}
+.links{
+    grid-area: links;
+}
+.links ul{
+    list-style: none;
+}
+
+.links li{
+    margin: 10px 0px;
+}
+.links img{
+    max-width: 30px;
+    max-height: 30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+#learned{
+    grid-area: learned;
+}
+
+/*remove padding from ul*/
+#learned ul , .criterias ul, .links ul{
+    padding-left: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+#singleProject h2{
+    padding-left: 25px;
+    margin: 0px;
+}
+@media screen and (max-width:1600px){
+
+    #allProject a{
+        width: 47.5%;
+    }
+    #allProject{
+        column-gap: 5%;
+        width: 60%;
+    }
+    #aboutMe{
+        flex-wrap: wrap;
+        row-gap: 50px;
+        justify-content: center;
+    }
+    #aboutMe .aboutFront{
+        width: 40%;
+    }
+    #aboutMe .aboutFront:last-of-type{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    #allProject{
+        width: 60%;
+    }
+    #skills section div{
+        width: 60%;
+    }
+
+}
+/*1130 px width*/
+/*most for hero front page*/
+@media screen and (max-width: 1130px){
+    .blurredBackground{
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+
+    }
+    #allProject{
+        width: 83%;
+        column-gap: 1%;
+        
+    }
+    #allProject a{
+        width: 49.5%;
+        padding:10px 5px
+    }
+    #projects.changingContent{
+        width: 80%;
+    }
+    main#aboutMe section{
+        width: 83%;
+    }
+}
+@media screen and (max-width: 845px) {
+    .blurredBackground{
+        grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+
+    }
+    #allProject{
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blurredBackground{
+        grid-template-columns:1fr;
+        grid-template-rows: 2fr 1fr auto;
+    }
+    .blurredBackground h1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    }
+    .blurredBackground #heroMe{
+        width: 40%;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .blurredBackground #scrollDown{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        margin-bottom: 10px;
+    }
+    .changingContent, .changingContent #aboutMe{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .projectFront, .skills, #aboutMe .aboutFront{
+        width: 100%;
+    }
+    #projects.changingContent{
+        row-gap: 30px;
+    } 
+    #skills section div{
+        width: 83%;
+    }
+    #aboutMe section{
+        width: 83%;
+    }
+    #singleProject{
+        width: 83%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "image image "
+        "mainText mainText"
+        "criterias links"
+        "learned .";
+    }
+    #allProject a{
+     width: 100%;
+     height: 200px;
+    }
+    #allProject a img{
+        height: 100px;
+        width: 100px;
+    }
+    footer{
+        grid-template-columns: 5% 45% 45% 5%;
+        grid-template-rows: auto auto;
+    }
+    footer > .contact{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left: 0;
+    }
+    footer > .visit{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+@media screen and (max-width: 500px){
+        /*project all page*/
+    #allProject{
+        width: 90%;
+    }
+    #allProject a{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "image"
+        "text";
+        margin-top:  10%;
+        padding: 30px 10px;
+        height: auto;
+    }
+    #allProject a .text{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+        
+}
+@media screen and (max-width: 425px){
+    .showNav{
+        width: 100vw !important;
+    }
+    .showNavParent{
+        width: 0px!important;
+    }
+    .blurredBackground{
+        grid-template-rows: 46.5vh 34.65vh 11.55vh;
+    }
+    .blurredBackground #heroMe{
+        width: 60%;
+    }
+    .content{
+        width: 90%;
+    }
+    /*allcontent landingpage*/
+    #projectTop .subHeader{
+        display: none;
+    }
+    #projectTop{
+        scroll-margin: 15px;
+    }
+   
+    .changingContent{
+        width: 70%;
+    }
+    .changingContent article{
+     width: 100%;
+    }
+    .changingContent .projectLogo, .changingContent .altLogo{
+        width: 150px;
+        height: 150px;
+    }
+  
+    
+    .navigation{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .navigation ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navigation ul li{
+        width: 50%;
+    }
+    footer{
+        grid-template-columns: 90%;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        }
+    footer > .contact{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    footer > .visit{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 0;
+    }
+    footer > .navigation{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #singleProject{
+        grid-template-columns: 100%;
+        grid-template-areas: "image"
+        "mainText"
+        "criterias"
+        "links"
+        "learned";
+    }
+    #bgImage{
+        max-width: 100%;
+        height: 250px;
+        background-position: center;
+    }
+    .blur{
+        height: 100%;
+    }
+    .screenshot{
+        height: 200px;
+        width: 90%;
+    }
+    main#aboutMe section{
+        grid-template-columns: 100%;
+        grid-template-areas: "h2"
+        "image"
+        "about";
+        height: auto;
+        grid-template-rows: auto auto auto;
+    }
+    main#aboutMe section img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    main#aboutMe section h2{
+        margin-bottom: 5px;
+    }
+}
