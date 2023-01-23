@@ -24,7 +24,6 @@ function createAbout(topic) {
   for (let para of topic.paragraphs) {
     p += `<p>${para}</p>`;
   }
-  console.log(p);
   return `
   <img class="aboutImg" src="${topic.image}" alt="${topic.alt}">
   <h2 class="centerHeader">${topic.title}</h2>

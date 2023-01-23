@@ -674,7 +674,27 @@ main#aboutMe section img{
         grid-row: 1/2;
     }
 }
-
+@media screen and (max-width: 500px){
+        /*project all page*/
+    #allProject{
+        width: 90%;
+    }
+    #allProject a{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "image"
+        "text";
+        margin-top:  10%;
+        padding: 30px 10px;
+        height: auto;
+    }
+    #allProject a .text{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
+        
+}
 @media screen and (max-width: 425px){
     .showNav{
         width: 100vw !important;
@@ -709,25 +729,7 @@ main#aboutMe section img{
         width: 150px;
         height: 150px;
     }
-    /*project all page*/
-    #allProject{
-        width: 90%;
-    }
-    #allProject a{
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-areas: "image"
-        "text";
-        margin-top:  10%;
-        padding: 30px 10px;
-        height: auto;
-    }
-    #allProject a .text{
-        width: 75%;
-        margin: 0 auto;
-        text-align: center;
-    }
-        
+  
     
     .navigation{
         grid-column: 2/4;
